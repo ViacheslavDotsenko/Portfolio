@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="Width=device-width, initial-scape=1.0">
+        <link rel="stylesheet" href="./css_style.css">
+        <title>send form</title>
+    </head>
+    <body>
+        <div class="wrapper">
+         <div class="form">
+            
+             <form action="#" id="form" class="form_body"></form>
+                 <h1 сlass="form_title">Send order email</h1>
+                 <div class="form_item">
+                     <label for="formName" class="form_label">Name*</label>
+
+                     <input id="formName" type="text" name="Name" class="form_input _req">
+                 </div>
+                 <div class="form_item">
+                    <label for="formEmail" class="form_label">E-mail*</label>
+                    <input id="formEmail" type="text" name="Email" class="form_input _req _email">
+                 </div>
+                 <div class="form_item">
+                     <div class="form_label">Made in?</div>
+                     <div сlass="options">
+                         <div class="options_item">
+                             <input id="USA"  checked type="radio" value="USA" name="country" class="options_input">
+                             <label for="USA" class="options_label"><span>USA</span></label>
+                         </div>     
+                         <div class="options_item">
+                            <input id="Europe" type="radio" value="Europe" name="country" class="options_input">
+                            <label for="Europe" class="options_label"><span>Europe</span></label>
+                        </div>               
+                     </div>                
+                 </div>
+                 <div class="form_item">
+                     <label for="formMessage" class="form_label">Message:</label>
+                     <textarea name="message" id="formMessage" class="form_input"></textarea>
+                 </div>
+                 <div class="form_item">
+                     <div сlass="form_label">Model:</div>
+                     <select name="model" class="select">
+                         <option value="Jetta" selected>Jetta</option>
+                         <option value="Passat">Passat</option>
+                         <option value="Golf">Golf</option>
+                         <option value="Polo">Polo</option>
+                     </select>                   
+                 </div>
+                 <div class="form_item">
+                     <div class="form_label">add photo</div>
+                     <div class="file">
+                         <div сlass="file_item">
+                             <input id="formImage" accept=".jpg, .png, .gif" type="file" mane="image" class="file_input">
+                             <div class="file_button">Select</div>
+                         </div>
+                         <div id="formPreview" class="file_preview"><img src="" alt="foto"></div>             
+                     </div>
+                 </div>
+                 <div class="form-item">
+                     <div class="checkbox">
+                         <input id="formAgreement"checked type="checkbox" name="agreement" class="checkbox_input _req">
+                         <label for="formAgreement" class="checkbox_label"><span>I accept the terms of use of personal data<a href="#">Rules</a></span></label>                        
+                     </div>
+                 </div>
+                 <button type="submit" class="form_button">Send</button>
+             </form>
+         </div>
+        </div>
+        <script src="jsset.js"></script>
+    </body>
+</html> 

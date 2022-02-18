@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Irish+Grover&family=Open+Sans:ital@1&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,300;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/1616581481_30-p-fon-dlya-brauzera-35.jpg);
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+h2 {
+  font-size: 35px;
+}
+p {
+  font-size: 22px;
+  text-align: left;
+}
+
+.leng:hover {
+  text-shadow: 0 0 10px rgb(186, 248, 61);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.bartop {
+  width: 100%;
+  background-color: #37393d;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.leng {
+  cursor: pointer;
+  color: white;
+  background-color: #37393d;
+  border: 1px solid #37393d;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.nav-link li a {
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+}
+.nav-link li a:hover {
+  color: rgb(252, 252, 252);
+  text-shadow: 0 0 25px white;
+}
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-transform: uppercase;
+  width: 100%;
+}
+.nav-link li {
+  list-style: none;
+}
+.lng-langBodTitle {
+  margin-bottom: 7%;
+}
+.lng-langName {
+  margin-bottom: 8%;
+}
+.textBody {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.lengKnow {
+  font-size: 22px;
+  list-style: none;
+  text-align: left;
+}
+.avatar {
+  background: url(../img/foto.png);
+  background-size: cover;
+  width: 225px;
+  height: 360px;
+  border-radius: 10px;
+}
+.avatar:hover {
+  scale: 1.3;
+}
+
+.textBody-left {
+  max-width: 330px;
+  height: 100%;
+  color: aliceblue;
+}
+.shadow {
+  text-shadow: 0 5px 45px white;
+  transition: 0.3s;
+  transform: scale(1.5);
+}
+.textBody-right {
+  padding: 20px;
+  width: 70%;
+  height: 100%;
+  color: rgb(186, 248, 61);
+}
+
+.bodyTitle {
+  align-items: center;
+}
+/*-----project-----*/
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0 50px 0;
+}
+.project h2 {
+  text-align: center;
+  margin-bottom: 100px;
+  flex: 0 1 100%;
+  color: rgb(186, 248, 61);
+}
+.project h2:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  text-shadow: 0 5px 45px rgb(186, 248, 61);
+}
+.project-form {
+  overflow: hidden;
+  width: 400px;
+  height: 480px;
+  border-radius: 10px;
+}
+.project-form:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px white;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+.img-send-form img {
+  width: 100%;
+}
+.project-lending {
+  width: 400px;
+  height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.img-test-figma img {
+  width: 100%;
+}
+.project-lending:hover {
+  box-shadow: 0 0 20px white;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+/*-----contact---*/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact-title {
+  flex: 0 1 100%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  color: rgb(186, 248, 61);
+  margin: 0 0 3% 0;
+}
+.contact-title:hover {
+  transition: 0.4s;
+  cursor: pointer;
+  transform: scale(1.3);
+  text-shadow: 0 5px 45px rgb(186, 248, 61);
+}
+.contact-iformation {
+  flex: 0 1 50%;
+  line-height: 50px;
+  font-size: 30px;
+  max-width: 500px;
+}
+
+.contact-iformation a {
+  margin-right: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  margin-bottom: 50px;
+
+  justify-content: center;
+}
+
+.contact-map {
+  flex: 0 1 45%;
+  max-width: 500px;
+  height: 100%;
+}
+
+.copyright {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: bisque;
+  font-size: 17px;
+}
+@media screen and (max-width: 1150px) {
+  .bartop {
+    padding-left: 1em;
+  }
+  .textBody {
+    padding-left: 1em;
+  }
+  .contact {
+    flex-direction: column;
+    padding: 0 1em 0 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .contact-iformation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .contact-map {
+    margin: 0 auto;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project-form {
+    padding-bottom: 38em;
+  }
+}
