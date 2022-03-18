@@ -51,8 +51,8 @@ const langArr = {
         "ua": "Доценко Вячеслав",
     },
     "langE-B-MY": {
-        "en": "Desire to be part of a friendly and professional team where i could improve my professional skills. I can work with other developers' code. Also I work with HTML5, CSS, JavaScript, React, Git.  I have passed Frecodecamp and currently studying at RS School of the EPAM company.",
-        "ua": "Маю бажання стати частиною дружньої та професійної команди, де я міг би покращити свої професійні навички. Можу працювати з кодом інших розробників. Також  працюю з такими мовами програмування як: HTML5, CSS, JavaScript, React, Git. Пройшов он-лайн курси Frecodecamp і зараз навчаюся в RS School компанії EPAM.",
+        "en": "Desire to be part of a friendly and professional team where i could improve my professional skills. I can work with other developers' code. Also I work with HTML5, CSS, JavaScript, React, jQuery, Git.  I have passed Frecodecamp and currently studying at RS School of the EPAM company.",
+        "ua": "Маю бажання стати частиною дружньої та професійної команди, де я міг би покращити свої професійні навички. Можу працювати з кодом інших розробників. Також  працюю з такими мовами програмування як: HTML5, CSS, JavaScript, React, jQuery, Git. Пройшов он-лайн курси Frecodecamp і зараз навчаюся в RS School компанії EPAM.",
     },
     "langProjekt": {
         "en": "Project:",
@@ -170,3 +170,19 @@ let blokh2 = document.querySelector('.ava-text-h2');
             setTimeout(() => blokcontactTitle.classList.remove('shadow'), 2000);
         };
     
+        let header_burger = document.querySelector('.header_burger');
+        let header_menu = document.querySelector('.header_menu');
+        let back = document.querySelector('body');
+        let header__list = document.querySelector('.header_list');
+        
+        header_burger.onclick = function(){
+            
+            header_burger.classList.toggle('active');
+            header_menu.classList.toggle('active');
+            back.classList.toggle('lock');
+        };
+        
+        header__list.onclick = function () {
+            header__list.classList.remove('active');
+            back.classList.toggle('lock');
+        }

@@ -13,43 +13,28 @@
     <title>Front-End</title>
   </head>
   <body class="body">
-    <div class="bartop">
-      <div class="container">
-        <div class="nav-bar">
-          <select class="leng">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+        <div class="header_body">
+          <select class="header_leng">
             <option value="en">EN</option>
             <option value="ua" selected>UA</option>
           </select>
-          <ul class="nav-link">
-            <li>
-              <a class="lng-langebout" href="#" onclick="addShadow()"
-                >ebout me</a
-              >
-            </li>
-            <li>
-              <a
-                class="lng-langcontact"
-                href="#contact"
-                onclick="addShadowContact()"
-                >contact</a
-              >
-            </li>
-            <li>
-              <a
-                class="lng-langeducation"
-                href="#"
-                onclick="addShadowEducation()"
-                >education</a
-              >
-            </li>
-            <li>
-              <a class="lng-langhobbies" href="#" onclick="addShadowHobbi()"
-                >hobbies</a
-              >
-            </li>
-          </ul>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+           <ul class="header_list">
+            <li><a class="link lng-langebout" href="" onclick="addShadow()">ebout me</a></li>
+            <li><a class="link lng-langcontact" href="#contact" onclick="addShadowContact()">contact</a></li>
+            <li><a class="link lng-langeducation" href="" onclick="addShadowEducation()">education</a></li>
+            <li><a class="link lng-langhobbies" href="" onclick="addShadowHobbi()">hobbies</a></li>
+           </ul>
+          </nav>          
         </div>
       </div>
+      </header>
     </div>
     <div class="container">
       <div class="textBody">
