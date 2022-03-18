@@ -172,7 +172,7 @@ p {
 .project-form:hover {
   cursor: pointer;
   box-shadow: 0 0 20px white;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.4s;
 }
 .img-send-form img {
@@ -190,7 +190,7 @@ p {
 .project-lending:hover {
   box-shadow: 0 0 20px white;
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.4s;
 }
 
@@ -359,6 +359,15 @@ p {
     }
     .footer {
       margin: 50px;
+    }
+    .project {
+      padding: 50px 0 50px 40px;
+    }
+    .project-form:hover {
+      scale: 1;
+    }
+    .project-lending:hover {
+      scale: 1;
     }
   }
 }
